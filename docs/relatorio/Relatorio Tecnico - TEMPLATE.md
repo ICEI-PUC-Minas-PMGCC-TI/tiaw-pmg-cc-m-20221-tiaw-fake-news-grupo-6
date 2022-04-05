@@ -56,23 +56,8 @@
 
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
->
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+A humanidade, atualmente, está conectada. Temos acesso a notícias de qualquer lugar do mundo na palma da nossa mão. Conseguimos nos comunicar de forma instantânea com outras pessoas e isso abriu portas para várias novas soluções. Porém, é muito difícil garantir que todo esse poder vai ser utilizado de forma consciente por todos os usuários da rede. Um problema causado por esse ambiente pouco regulado é a dissipação de notícias falsas, também conhecidas como  "fake news".
+As "fake news" são informações falsas criadas com o propósito de confundir quem lê. Elas foram usadas para manipular eleitores durante a eleição presidencial dos EUA em 2016, marcaram as eleições brasileiras de 2018 e contribuíram para teorias conspiracionistas relacionadas à pandemia do coronavírus.
 
 ## Objetivos
 
