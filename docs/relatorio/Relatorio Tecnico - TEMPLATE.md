@@ -5,17 +5,15 @@
 
 `CURSO` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Ciência da Computação
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
+* Davi Rodrigues Barbosa
+* Manoella Santos Diniz
+* Pedro Francisco Staino Santayana
+* Victor Cabral de Souza Oliveira
 
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
 
 # Estrutura do Documento
 
@@ -57,36 +55,18 @@
 ## Problema
 
 A humanidade, atualmente, está conectada. Temos acesso a notícias de qualquer lugar do mundo na palma da nossa mão. Conseguimos nos comunicar de forma instantânea com outras pessoas e isso abriu portas para várias novas soluções. Porém, é muito difícil garantir que todo esse poder vai ser utilizado de forma consciente por todos os usuários da rede. Um problema causado por esse ambiente pouco regulado é a dissipação de notícias falsas, também conhecidas como  "fake news".
-As "fake news" são informações falsas criadas com o propósito de confundir quem lê. Elas foram usadas para manipular eleitores durante a eleição presidencial dos EUA em 2016, marcaram as eleições brasileiras de 2018 e contribuíram para teorias conspiracionistas relacionadas à pandemia do coronavírus.
 
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Queremos criar uma solução que incentive o consumo de notícias verdadeiras. 
 
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
-> 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Além disso, temos alguns objetivos especificos:
+
+* Convencer jovens de que é necessário a verificação da veracidade de uma notícia recebida.
 
 ## Justificativa
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
-> 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+De acordo com a nossa pesquisa qualitativa, cerca de 70% dos entrevistados não utilizam nenhuma ferramenta para validar as notícias que recebem, seja por redes sociais ou pela mídia tradicional. Além disso, os jovens de 14 e 17 anos são os que mais se informam utilizando redes sociais e também são os que menos tomam providência quando recebem notícias falsas.
 
 ## Público-Alvo
 
