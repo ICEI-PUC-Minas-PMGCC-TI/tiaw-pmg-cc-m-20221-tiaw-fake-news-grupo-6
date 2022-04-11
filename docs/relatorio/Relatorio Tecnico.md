@@ -70,26 +70,14 @@ De acordo com a nossa pesquisa qualitativa, cerca de 70% dos entrevistados não 
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
+O público-alvo do nosso projeto são:
 
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
- 
+* Pessoas, homens e mulheres, com formação em jornalismo e com diferentes ideologias.
+* Pessoas, homens e mulheres, responsáveis pelas publicações em sites de notícias.
+
 # Especificações do Projeto
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Foi utlizado a plataforma [Miro](https://miro.com/) para gerenciar a matriz CSD, as personas, o brainstorm e o 
 
 > Apresente uma visão geral do que será abordado nesta parte do
 > documento, enumerando as técnicas e/ou ferramentas utilizadas para
@@ -151,8 +139,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir o cadastro de jornalistas | ALTA | 
+|RF-002| Permitir o cadastro de  | MÉDIA |
 
 
 ### Requisitos não Funcionais
@@ -282,8 +270,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 
 ## Ferramentas
-
-......  COLOQUE AQUI O SEU TEXTO - SIGA O EXEMPLO DA TABELA ABAIXO  ......
 
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
