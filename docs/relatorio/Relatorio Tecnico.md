@@ -58,11 +58,12 @@ A humanidade, atualmente, está conectada. Temos acesso a notícias de qualquer 
 
 ## Objetivos
 
-Queremos criar uma solução que incentive o consumo de notícias verdadeiras. 
+Queremos criar uma solução que ajude a combater as chamadas "fake news". 
 
 Além disso, temos alguns objetivos especificos:
 
-* Convencer jovens de que é necessário a verificação da veracidade de uma notícia recebida.
+* Convencer jovens de que é necessário a verificação de notícias recebidas.
+* Criar uma plataforma que administre um selo de veracidade para notícias.
 
 ## Justificativa
 
@@ -77,38 +78,20 @@ O público-alvo do nosso projeto são:
 
 # Especificações do Projeto
 
-Foi utlizado a plataforma [Miro](https://miro.com/) para gerenciar a matriz CSD, as personas, o brainstorm e o 
-
-> Apresente uma visão geral do que será abordado nesta parte do
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
+* Foi utlizado a plataforma [Miro](https://miro.com/) para do processo de Design Thinking.
+* [Trello](https://trello.com/) para a lista de tarefas.
+* [Figma.com](https://figma.com/) para o 
 
 ## Personas e Mapas de Empatia
 
-......  COLOQUE AQUI O SEU TEXTO ......
+![Alt text](images/persona1.jpg?raw=true "Persona 1")
+![Alt text](images/empatia1.jpg?raw=true "Mapa de empatia 1")
 
+![Alt text](images/persona2.jpg?raw=true "Persona 2")
+![Alt text](images/empatia2.jpg?raw=true "Mapa de empatia 2")
 
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que 
-> você deve ser enumerar e descrever precisamente e de forma
-> personalizada todos os principais envolvidos com a solução almeja. 
-> 
-> Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina
-> e/ou nos seguintes links:
->
-> **Links Úteis**:
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Como fazer um mapa de empatia - Vídeo](https://www.youtube.com/watch?v=JlKHGpVoA2Y)
-> 
-> 
-> **Exemplo de Persona**
-> 
-> ![Exemplo de Persona](imaages/../images/persona.png)
-> 
-> Fonte: [Como criar uma persona para o seu negócio](https://raissaviegas.com.br/como-criar-uma-persona/)
+![Alt text](images/persona3.jpg?raw=true "Persona 3")
+![Alt text](images/empatia3.jpg?raw=true "Mapa de empatia 3")
 
 
 ## Histórias de Usuários
@@ -117,7 +100,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
+|Usuário do sistema  | Cadastrar notícia para ser verificada | Conseguir o selo da notícia         |
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
 > Apresente aqui as histórias de usuário que são relevantes para o
