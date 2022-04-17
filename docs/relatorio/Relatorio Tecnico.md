@@ -80,7 +80,7 @@ O público-alvo do nosso projeto são:
 
 * Foi utlizado a plataforma [Miro](https://miro.com/) para do processo de Design Thinking.
 * [Trello](https://trello.com/) para a lista de tarefas.
-* [Figma.com](https://figma.com/) para o 
+* [Figma.com](https://figma.com/) para o Wireframe e para o protótipo interativo. 
 
 ## Personas e Mapas de Empatia
 
@@ -134,12 +134,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Projeto de Interface
 
-......  COLOQUE AQUI O SEU TEXTO DE INTRODUÇÃO ......
-
-> Apresente as principais interfaces da solução. Discuta como 
-> foram elaboradas de forma a atender os requisitos funcionais, não
-> funcionais e histórias de usuário abordados nas [Especificações do
-> Projeto](#especificações-do-projeto).
+* Nosso mapa do site:
+![Mapa do site](images/mapa.jpg)
 
 ## User Flow
 
@@ -211,8 +207,6 @@ utizamos o Trello Para organização e distribuição das tarefas do projeto.
  utilizamos o Figma por melhor captar as necessidades da nossa solução.
 
 ## Controle de Versão
-
-......  COLOQUE AQUI O SEU TEXTO ......
 
 > A ferramenta de controle de versão adotada no projeto foi o
 > [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
