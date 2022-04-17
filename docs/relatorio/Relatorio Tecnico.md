@@ -180,35 +180,41 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 > ![Exemplo de Wireframe](images/wireframe-example.png)
 
 
-# Metodologia
+## Metodologia
 
-......  COLOQUE AQUI O SEU TEXTO ......
+A metodologia desse projeto foi feita com base na combinação dos metodos "Design Thinking"
+e Scrum, utilizamos o metodo "Design Thinking" na fase inicial do projeto, e na fase de 
+desenvolvimento utilizamos o Scrum.
 
-> Nesta parte do documento, você deve apresentar a metodologia 
-> adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, 
-> a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a
-> gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido
-> pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar
-> o andamento do projeto, a execução das tarefas e o status de desenvolvimento
-> da solução.
-> 
-> **Links Úteis**:
-> - [Tutorial Trello](https://trello.com/b/8AygzjUA/tutorial-trello)
-> - [Gestão ágil de projetos com o Trello](https://www.youtube.com/watch?v=1o9BOMAKBRE)
-> - [Gerência de projetos - Trello com Scrum](https://www.youtube.com/watch?v=DHLA8X_ujwo)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+
 
 ## Divisão de Papéis
 
-......  COLOQUE AQUI O SEU TEXTO ......
 
-> Apresente a divisão de papéis e tarefas entre os membros do grupo.
->
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+| Membro    | Função             |
+|-------------------|-------------------------|
+| Professores  | Product owner | 
+|Manoella Santos Diniz | Deselvonvedora e Scrum Master | 
+|Pedro Francisco Staino Santayana | Desenvolvedor | 
+|Victor Cabral de Souza Oliveira | Desenvolvedor | 
+|Davi Rodrigues Barbosa | Desenvolvedor | 
+
+ 
+utizamos o Trello Para organização e distribuição das tarefas do projeto.
+
+
+* Etiquetas: utilizamos a etiqueta para indicar as devidas funções de cada componente do grupo.
+
+* A fazer: essa coluna se remete a uma Sprint que ainda precisamos fazer.
+
+* Em andamento: se essa terefa esta sendo feita por um dos integrantes do grupo.
+
+* revisão: assim que a pessoa acaba de fazer a terefa, ela coloca a terefa nessa coluna para realizar revisão que é feita pelos integrantes do grupo.
+
+* Concluído: Tarefas Concluidas e revisadas pela equipe.
+
+**imagem do trello**
+
 
 
 ## Ferramentas
@@ -217,31 +223,22 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |-----------|-------------------------|---------------|
 |Processo de Design Thinkgin  | Miro | https://miro.com/app/board/uXjVOB7DjGc=/ | 
 |Repositório de código | GitHub | https://github.com/ICEI-PUC-Minas-PMGCC-TI/tiaw-pmg-cc-m-20221-tiaw-fake-news-grupo-6 | 
-|Hospedagem do site | Heroku |  https://XXXXXXX.herokuapp.com | 
-|Protótipo Interativo | MavelApp ou Figma | https://figma.com/XXXXXXX | 
+|Protótipo Interativo |  Figma | https://www.figma.com/file/1eI3q7wrR2CUJONs0MOvrp/Fake-News?node-id=0%3A1 | 
 
->
-> Liste as ferramentas empregadas no desenvolvimento do
-> projeto, justificando a escolha delas, sempre que possível.
-> 
-> As ferramentas empregadas no projeto são:
-> 
-> - Editor de código.
-> - Ferramentas de comunicação
-> - Ferramentas de diagramação
-> - Plataforma de hospedagem
-> 
-> O editor de código foi escolhido porque ele possui uma integração com o
-> sistema de versão. As ferramentas de comunicação utilizadas possuem
-> integração semelhante e por isso foram selecionadas. Por fim, para criar
-> diagramas utilizamos essa ferramenta por melhor captar as
-> necessidades da nossa solução.
-> 
-> **Links Úteis - Hospedagem**:
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Crie seu Site com o HostGator](https://www.hostgator.com.br/como-publicar-seu-site)
-> - [GoDady](https://br.godaddy.com/how-to)
-> - [GitHub Pages](https://pages.github.com/)
+
+ 
+ As ferramentas empregadas no projeto são:
+ 
+ - Editor de código: VS code.
+ - Ferramentas de comunicação: WhatsApp, Discord, Microsoft Teams.
+ - Ferramentas de diagramação: Figma, Miro
+ 
+ O editor de código foi escolhido pela equipe por ser um programa acessivel 
+ para qualquer sistema operacional, de facil utilzação e por ser um progama
+ leve. Os meios de comunicação foram escolhidos pela equipe ja possuir uma 
+ grande afinidade com todos. Utilizamos o miro para o processo de design 
+ Thinkgin por sugestão dos professores. Por fim, para criar o protótipo interativo 
+ utilizamos o Figma por melhor captar as necessidades da nossa solução.
 
 ## Controle de Versão
 
@@ -251,20 +248,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 > [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
 > foi utilizado para hospedagem do repositório `upstream`.
 > 
-> O projeto segue a seguinte convenção para o nome de branchs:
-> 
-> - `master`: versão estável já testada do software
-> - `unstable`: versão já testada do software, porém instável
-> - `testing`: versão em testes do software
-> - `dev`: versão de desenvolvimento do software
-> 
-> Quanto à gerência de issues, o projeto adota a seguinte convenção para
-> etiquetas:
-> 
-> - `bugfix`: uma funcionalidade encontra-se com problemas
-> - `enhancement`: uma funcionalidade precisa ser melhorada
-> - `feature`: uma nova funcionalidade precisa ser introduzida
->
 
 # **############## SPRINT 1 ACABA AQUI #############**
 
