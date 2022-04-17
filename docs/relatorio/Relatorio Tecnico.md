@@ -147,8 +147,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Wireframes
 
-![UserFlow](images/Produtos Page.jpeg)
-![UserFlow](images/Login Page.jpeg)
+![Produtos](images/Produtos%20Page.png)
+![Login](images/Login%20Page.png)
 
 ## Metodologia
 
