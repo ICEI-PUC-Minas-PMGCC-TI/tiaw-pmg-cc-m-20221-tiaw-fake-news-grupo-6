@@ -179,7 +179,7 @@ utizamos o Trello Para organização e distribuição das tarefas do projeto.
 
 * Concluído: Tarefas Concluidas e revisadas pela equipe.
 
-**imagem do trello**
+![davi](link)
 
 
 
@@ -190,6 +190,7 @@ utizamos o Trello Para organização e distribuição das tarefas do projeto.
 |Processo de Design Thinkgin  | Miro | https://miro.com/app/board/uXjVOB7DjGc=/ | 
 |Repositório de código | GitHub | https://github.com/ICEI-PUC-Minas-PMGCC-TI/tiaw-pmg-cc-m-20221-tiaw-fake-news-grupo-6 | 
 |Protótipo Interativo |  Figma | https://www.figma.com/file/1eI3q7wrR2CUJONs0MOvrp/Fake-News?node-id=0%3A1 | 
+|Organização |  Trello | https://trello.com/b/Oj4S2FOz/fake-news-t3-g6 | 
 
 
  
