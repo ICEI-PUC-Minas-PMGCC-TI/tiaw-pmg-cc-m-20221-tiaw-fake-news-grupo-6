@@ -179,7 +179,7 @@ utizamos o Trello Para organização e distribuição das tarefas do projeto.
 
 * Concluído: Tarefas Concluidas e revisadas pela equipe.
 
-![davi](link)
+![trello](images/123.PNG)
 
 
 
