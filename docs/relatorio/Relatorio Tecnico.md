@@ -65,7 +65,7 @@ O público-alvo do nosso projeto são:
 
 # Especificações do Projeto
 
-Nessa seção, será apresentada uma visão um pouco mais aprofundada do projeto, através da elaboração das Personas, Histórias de Usuários, Requisitos e Restrições do projeto.
+Nessa seção, será apresentada uma visão mais aprofundada do projeto, através das Personas, Histórias de Usuários, Requisitos e Restrições do projeto.
 
 ## Personas e Mapas de Empatia
 
