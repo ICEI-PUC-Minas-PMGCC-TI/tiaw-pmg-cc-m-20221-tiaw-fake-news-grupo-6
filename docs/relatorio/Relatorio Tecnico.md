@@ -1,11 +1,8 @@
 # Informações do Projeto
-`TÍTULO DO PROJETO`  
+Confia! - Plataforma de verificação de noticias
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Trabalho Interdisciplinar: Aplicacões Web | Ciência da Computação | PUC Minas
 
-`CURSO` 
-
-Ciência da Computação
 
 ## Participantes
 
@@ -38,7 +35,6 @@ Ciência da Computação
 - [Metodologia](#metodologia)
   - [Divisão de Papéis](#divisão-de-papéis)
   - [Ferramentas](#ferramentas)
-  - [Controle de Versão](#controle-de-versão)
 - [**############## SPRINT 1 ACABA AQUI #############**](#-sprint-1-acaba-aqui-)
 - [Projeto da Solução](#projeto-da-solução)
   - [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -207,12 +203,6 @@ utizamos o Trello Para organização e distribuição das tarefas do projeto.
  Thinkgin por sugestão dos professores. Por fim, para criar o protótipo interativo 
  utilizamos o Figma por melhor captar as necessidades da nossa solução.
 
-## Controle de Versão
-
-> A ferramenta de controle de versão adotada no projeto foi o
-> [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-> foi utilizado para hospedagem do repositório `upstream`.
-> 
 
 # **############## SPRINT 1 ACABA AQUI #############**
 
