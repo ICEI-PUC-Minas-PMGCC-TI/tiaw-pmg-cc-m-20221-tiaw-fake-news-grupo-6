@@ -65,9 +65,7 @@ O público-alvo do nosso projeto são:
 
 # Especificações do Projeto
 
-* Foi utlizado a plataforma [Miro](https://miro.com/) para do processo de Design Thinking.
-* [Trello](https://trello.com/) para a lista de tarefas.
-* [Figma.com](https://figma.com/) para o Wireframe e para o protótipo interativo. 
+Nessa seção, será apresentada uma visão um pouco mais aprofundada do projeto, através da elaboração das Personas, Histórias de Usuários, Requisitos e Restrições do projeto.
 
 ## Personas e Mapas de Empatia
 
