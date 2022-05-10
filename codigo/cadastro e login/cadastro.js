@@ -6,11 +6,12 @@ window.onload = function() {
     }
 };
 
-document.getElementById("registerForm").onload = function(event) {
+document.getElementById("registerForm").onsubmit = function(event) {
     let db = localStorage.getItem("db");
     let acc = db["accounts"];
     //if(event.target.email )
 
+    // Exemplo de conta:
     acc.push({
         "id": acc.length, // pode causar ambiguidades, precisa de backend
         "firstName": event.target.firstName,
