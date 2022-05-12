@@ -1,10 +1,32 @@
 window.onload = function() {
     if(localStorage.getItem("db") == null) {
-        localStorage.setItem("db", {
+        localStorage.setItem("db", JSON.stringify({
             "accounts": []
-        });
+        }));
     }
+    console.log(localStorage.getItem("db"));
 };
+
+function loginFormSubmit(event) {
+    event.preventDefault();
+    login(event.target.email, event.target.password);
+}
+
+function registerFormSubmit(event) {
+    event.preventDefault();
+
+    login(event.target.email, event.target.password);
+}
+
+function login(email, password) {
+    let acc = getAccount(email);
+    if(acc != null && acc.password == password) {
+        sessionStorage.setItem("user", acc);
+    } else {
+        // Senha incorreta ou email inválido
+    }
+}
+
 
 document.getElementById("registerForm").onsubmit = function(event) {
     let db = localStorage.getItem("db");
@@ -24,13 +46,6 @@ document.getElementById("registerForm").onsubmit = function(event) {
     db["accounts"] = acc;
     localStorage.setItem("db", db);
     console.log(localStorage.getItem("db"))
-}
-
-function login(email, password) {
-    let acc = getAccount(email);
-    if(acc != null) {
-        sessionStorage.setItem("user", acc);
-    }
 }
 
 function getAccount(email) {
