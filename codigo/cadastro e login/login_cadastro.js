@@ -7,35 +7,32 @@ window.onload = function() {
     console.log(localStorage.getItem("db"));
 };
 
-function loginFormSubmit(event) {
+var loginFormSubmit = function(event) {
     event.preventDefault();
-    login(event.target.email, event.target.password);
-}
-
-function registerFormSubmit(event) {
-    event.preventDefault();
-
-    login(event.target.email, event.target.password);
-}
-
-function login(email, password) {
-    let acc = getAccount(email);
-    if(acc != null && acc.password == password) {
+    let acc = getAccount(event.target.email);
+    if(acc != null && acc.password == event.target.password) {
         sessionStorage.setItem("user", acc);
+        window.location('perfil.html'); // Redirecionar 
     } else {
         // Senha incorreta ou email inválido
     }
 }
 
+var registerFormSubmit = function(event) {
+    event.preventDefault();
+    console.log(event);
+    let db = getDatabase();
 
-document.getElementById("registerForm").onsubmit = function(event) {
-    let db = localStorage.getItem("db");
-    let acc = db["accounts"];
-    //if(event.target.email )
+    for(let acc in db.accounts) {
+        if(acc.email == event.target.email) {
+            console.log("Email já cadastrado.");
+            return;
+        }
+    }
 
     // Exemplo de conta:
-    acc.push({
-        "id": acc.length, // pode causar ambiguidades, precisa de backend
+    db.accounts.push({
+        "id": db.accounts.length, // pode causar ambiguidades, precisa de backend
         "firstName": event.target.firstName,
         "secondName": event.target.secondName,
         "email": event.target.email,
@@ -43,13 +40,12 @@ document.getElementById("registerForm").onsubmit = function(event) {
         "type": 1
     });
 
-    db["accounts"] = acc;
-    localStorage.setItem("db", db);
-    console.log(localStorage.getItem("db"))
+    setDatabase(db);
+    console.log("Cadastro: "+localStorage.getItem("db"))
 }
 
-function getAccount(email) {
-    let db = localStorage.getItem("db");
+var getAccount = function(email) {
+    let db = getDatabase();
     let acc = db["accounts"];
 
     for (account in acc) {
@@ -57,4 +53,12 @@ function getAccount(email) {
             return account;
         } 
     }
+}
+
+var getDatabase = function() {
+    return JSON.parse(localStorage.getItem("db"));
+}
+
+var setDatabase = function(db) {
+    localStorage.setItem("db", JSON.stringify(db));
 }
