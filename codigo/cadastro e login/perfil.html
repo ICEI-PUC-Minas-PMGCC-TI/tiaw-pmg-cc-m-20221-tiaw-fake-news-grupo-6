@@ -28,7 +28,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="cadastro.html">Cadastrar</a>
+              <a class="nav-link" onclick="logout()">Sair</a>
             </li>
           </ul>
         </div>
@@ -37,32 +37,14 @@
   </header>
 
   <main class="container-fluid justify-content-center">
-    <h1 class="text-center py-3">Faça Login no Confia!</h1>
-    <div class="row">
-      <div class="col-md-2 col-lg-4"></div>
-      <form class="col col-lg-4" id="loginForm" onsubmit="loginFormSubmit(event)">
-
-        <div class="mb-3 row justify-content-center">
-          <div class="col-8">
-            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Email"
-              required>
-          </div>
-        </div>
-        <div class="mb-3 row justify-content-center">
-          <div class="col-8">
-            <input type="password" class="form-control" id="passwordInput" placeholder="Senha" required>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-center pt-3">
-          <button type="submit" class="btn btn-primary">Login</button>
-        </div>
-      </form>
-      <div class="col-md-2 col-lg-4"></div>
-    </div>
+    <p>Nome: <span id="firstName"></span></p>
+    <p>Sobrenome: <span id="secondName"></span></p>
+    <p>Email: <span id="email"></span></p>
+    <p>Senha: <span id="password"></span></p>
+    <p>Tipo de conta: <span id="type"></span></p>
   </main>
 
-  <script src="login_cadastro.js"></script>
+  <script src="user.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>

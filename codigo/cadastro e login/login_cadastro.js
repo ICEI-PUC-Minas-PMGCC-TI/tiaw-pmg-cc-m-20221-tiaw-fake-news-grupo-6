@@ -1,58 +1,61 @@
 window.onload = function() {
     if(localStorage.getItem("db") == null) {
+        // Criação de banco de dados
         localStorage.setItem("db", JSON.stringify({
             "accounts": []
         }));
+        console.log("Banco de dados criado.");
     }
-    console.log(localStorage.getItem("db"));
 };
 
 var loginFormSubmit = function(event) {
     event.preventDefault();
-    let acc = getAccount(event.target.email);
-    if(acc != null && acc.password == event.target.password) {
-        sessionStorage.setItem("user", acc);
-        window.location('perfil.html'); // Redirecionar 
+    let target = $(event.target);
+
+    let email = target.find("#emailInput").val();
+    let password = target.find("#passwordInput").val();
+    let account = getAccount(email);
+
+    if(account !== undefined && account.password == password) {
+        sessionStorage.setItem("user", JSON.stringify(account)); // Informações da conta no SessionStorage (inclusive a senha...)
+        window.location = "perfil.html"; // Redirecionar 
     } else {
-        // Senha incorreta ou email inválido
+        alert("Senha incorreta ou email inválido.", "danger");
     }
 }
 
-var registerFormSubmit = function(event) {
+var registerFormSubmit = event => {
     event.preventDefault();
-    console.log(event);
+    let target = $(event.target);
     let db = getDatabase();
 
-    for(let acc in db.accounts) {
-        if(acc.email == event.target.email) {
-            console.log("Email já cadastrado.");
-            return;
-        }
-    }
-
-    // Exemplo de conta:
-    db.accounts.push({
+    // Exemplo de conta nova:
+    let newAccount = {
         "id": db.accounts.length, // pode causar ambiguidades, precisa de backend
-        "firstName": event.target.firstName,
-        "secondName": event.target.secondName,
-        "email": event.target.email,
-        "password": event.target.password, // falta criptografia
-        "type": 1
-    });
+        "firstName": target.find("#firstNameInput").val(),
+        "secondName": target.find("#secondNameInput").val(),
+        "email": target.find("#emailInput").val(),
+        "password": target.find("#passwordInput").val(), // falta fazer o hash da senha (criptografia)
+        // Tipo 1: Cadastrador de notícias; Tipo 2: Jornalistas; Tipo 3: Administrador
+        "type": target.find("#typeAInput").val() ? 1 : 2
+    };
 
-    setDatabase(db);
-    console.log("Cadastro: "+localStorage.getItem("db"))
+    if(getAccount(newAccount.email) === undefined) {
+        sessionStorage.setItem("user", JSON.stringify(newAccount)); // Informações da conta no SessionStorage (inclusive a senha...)
+        db.accounts.push(newAccount);
+        setDatabase(db);
+        window.location = "perfil.html"; // Redirecionar
+    } else {
+        alert("Email já cadastrado", "danger");
+    }
 }
 
-var getAccount = function(email) {
+var getAccount = email => {
     let db = getDatabase();
-    let acc = db["accounts"];
 
-    for (account in acc) {
-        if(account.email == email) {
-            return account;
-        } 
-    }
+    return db.accounts.find(account => {
+        return account.email == email;
+    })
 }
 
 var getDatabase = function() {
@@ -61,4 +64,19 @@ var getDatabase = function() {
 
 var setDatabase = function(db) {
     localStorage.setItem("db", JSON.stringify(db));
+}
+
+// Alertas
+const alertPlaceholder = document.getElementById("alert");
+
+const alert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
 }
