@@ -2,7 +2,24 @@ window.onload = function() {
     if(localStorage.getItem("db") == null) {
         // Criação de banco de dados
         localStorage.setItem("db", JSON.stringify({
-            "accounts": []
+            "accounts": [
+                {
+                    "id": 0,
+                    "firstName": "Confia",
+                    "secondName": "Administrador",
+                    "email": "admin@confia.com",
+                    "password": "admin",
+                    "type": 3
+                },
+                {
+                    "id": 1,
+                    "firstName": "John",
+                    "secondName": "Doe",
+                    "email": "john.doe@gmail.com",
+                    "password": "123",
+                    "type": 1
+                }
+            ]
         }));
         console.log("Banco de dados criado.");
     }
@@ -18,7 +35,11 @@ var loginFormSubmit = function(event) {
 
     if(account !== undefined && account.password == password) {
         sessionStorage.setItem("user", JSON.stringify(account)); // Informações da conta no SessionStorage (inclusive a senha...)
-        window.location = "perfil.html"; // Redirecionar 
+        if(account.type == 3) {
+            window.location = "admin.html";
+        } else {
+            window.location = "perfil.html";
+        } 
     } else {
         alert("Senha incorreta ou email inválido.", "danger");
     }
