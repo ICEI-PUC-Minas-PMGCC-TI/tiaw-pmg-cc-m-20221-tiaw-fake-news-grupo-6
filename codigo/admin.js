@@ -16,22 +16,50 @@ window.onload = () => {
     }
 
     console.log(user);
-
     let db = getDatabase();
+    var toAppend = "";
+    db.accounts.forEach(account => {
+        toAppend +=`
+        <div id="${account.id}" class="d-flex justify-content-between">
+          <span>${account.firstName}</span>
+          <div>
+            <span>Tipo: </span>
+            <span>${account.type == 1 ? "Cadastrador" : "Jornalista"}</span>
+            <button type="button" class="btn btn-danger d-inline" onclick="apagarConta(${account.id})">Apagar</button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-warning d-inline" data-bs-toggle="modal"
+              data-bs-target="#exampleModal" onclick="alterarConta(${account.id})">
+              Alterar
+            </button>
 
-    db.account.forEach(account => {
-        document.getElementById("contas").append(`
-        <div class="d-flex justify-content-between">
-            <span>{account.name}</span>
-            <div>
-                <span>Tipo: </span>
-                <span>{account.type == 1 ? "Cadastrador" : "Jornalista"}</span>
-            </div>
+          </div>
         </div>
-        `);
+        `;
     });
+    document.getElementById("contas").innerHTML = toAppend;
 }
 
+
+var apagarConta = id => {
+    let db = getDatabase();
+    let index = db.accounts.findIndex(account => {
+        return account.id == id;
+    });
+    db.accounts.splice(index, 1);
+    setDatabase(db);
+    document.getElementById(id).remove();
+}
+
+var alterarConta = id => {
+    let db = getDatabase();
+    let account = db.accounts.find(account => {
+        return account.id == id;
+    });
+
+    $("#firstName").placeholder = account.firstName;
+    $("#secondName").placeholder = account.secondName;
+    $("#email").placeholder = account.email;
+}
 
 // Database lib
 var getDatabase = function() {
@@ -41,3 +69,4 @@ var getDatabase = function() {
 var setDatabase = function(db) {
     localStorage.setItem("db", JSON.stringify(db));
 }
+
