@@ -15,7 +15,7 @@ window.onload = () => {
         window.location = "index.html";
     }
 
-    console.log(user);
+    console.log(user.firstName);
     let db = getDatabase();
     var toAppend = "";
     db.accounts.forEach(account => {
@@ -28,7 +28,7 @@ window.onload = () => {
             <button type="button" class="btn btn-danger d-inline" onclick="apagarConta(${account.id})">Apagar</button>
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-warning d-inline" data-bs-toggle="modal"
-              data-bs-target="#exampleModal" onclick="alterarConta(${account.id})">
+              data-bs-target="#exampleModal" onclick="alterarContaButton(${account.id})">
               Alterar
             </button>
 
@@ -38,7 +38,6 @@ window.onload = () => {
     });
     document.getElementById("contas").innerHTML = toAppend;
 }
-
 
 var apagarConta = id => {
     let db = getDatabase();
@@ -50,7 +49,7 @@ var apagarConta = id => {
     document.getElementById(id).remove();
 }
 
-var alterarConta = id => {
+var alterarContaButton = id => {
     let db = getDatabase();
     let account = db.accounts.find(account => {
         return account.id == id;
@@ -59,6 +58,20 @@ var alterarConta = id => {
     $("#firstName").placeholder = account.firstName;
     $("#secondName").placeholder = account.secondName;
     $("#email").placeholder = account.email;
+    document.getElementById("alterarContaForm").tagName = account.id;
+}
+
+var alterarContaFormSubmit = event => {
+    console.log("alterarContaFormSubmit");
+    let id = document.getElementById("alterarContaForm").tagName;
+    let db = getDatabase();
+    let i = db.accounts.findIndex(account => account.id === id);
+    db.accounts[i].firstName = target.find("#firstNameInput").val();
+    db.accounts[i].secondName = target.find("#secondNameInput").val();
+    db.accounts[i].email = target.find("#emailInput").val();
+    target.find("typeAInput").val() ? db.accounts[i].type = 1 : 
+    target.find("typeBInput").val() ? db.accounts[i].type = 2 : 3;
+    setDatabase(db);
 }
 
 // Database lib
