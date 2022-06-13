@@ -4,7 +4,7 @@ window.onload = function() {
         localStorage.setItem("db", JSON.stringify({
             "accounts": [
                 {
-                    "id": 0,
+                    "id": Math.random().toString(16).slice(2),
                     "firstName": "Confia",
                     "secondName": "Administrador",
                     "email": "admin@confia.com",
@@ -12,7 +12,7 @@ window.onload = function() {
                     "type": 3
                 },
                 {
-                    "id": 1,
+                    "id": Math.random().toString(16).slice(2),
                     "firstName": "John",
                     "secondName": "Doe",
                     "email": "john.doe@gmail.com",
@@ -52,7 +52,7 @@ var registerFormSubmit = event => {
 
     // Exemplo de conta nova:
     let newAccount = {
-        "id": db.accounts.length, // pode causar ambiguidades, precisa de backend
+        "id": Math.random().toString(16).slice(2),
         "firstName": target.find("#firstNameInput").val(),
         "secondName": target.find("#secondNameInput").val(),
         "email": target.find("#emailInput").val(),
