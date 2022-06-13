@@ -9,6 +9,10 @@ import {
 window.onload = () => {
   const user = getSessionAccount();
 
+  if(user === null) {
+    window.location = "login.html";
+  }
+
   if (user.type != 3) {
     window.location = "index.html";
   }
@@ -57,9 +61,9 @@ var reloadAccounts = () => {
 
 function getType(n) {
   switch (n) {
-    case 1: return "Cadastrador";
-    case 2: return "Jornalista";
-    case 3: return "Administrador";
+    case "1": return "Cadastrador";
+    case "2": return "Jornalista";
+    case "3": return "Administrador";
   }
 }
 

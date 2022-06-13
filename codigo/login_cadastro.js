@@ -9,7 +9,7 @@ window.onload = function() {
                     "secondName": "Administrador",
                     "email": "admin@confia.com",
                     "password": "admin",
-                    "type": 3
+                    "type": "3"
                 },
                 {
                     "id": Math.random().toString(16).slice(2),
@@ -17,7 +17,7 @@ window.onload = function() {
                     "secondName": "Doe",
                     "email": "john.doe@gmail.com",
                     "password": "123",
-                    "type": 1
+                    "type": "1"
                 }
             ]
         }));
