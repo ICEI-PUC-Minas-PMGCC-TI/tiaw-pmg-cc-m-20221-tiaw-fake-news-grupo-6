@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+body {
+    background-color: rgb(114, 180, 114);
+}
+
+.btn-warning {
+    margin-left: 40%;
+}
+
+h2 
+{
+    margin-left: 1%;
+    font-size: 30px;
+}
