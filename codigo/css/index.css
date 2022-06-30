@@ -1,0 +1,287 @@
+/* ------------------------------ Gerais        ------------------------------ */
+body {
+    background-color: #def1ff;
+    color: #000517;
+}
+
+body p {
+    font-size: 14pt;
+}
+
+header {
+    background-color: #000517;
+    color: #def1ff;
+    padding: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.line {
+    display: inline-block;
+    border-top: 1px solid #fca23a;
+    width: 100%;
+}
+
+/* ------------------------------ Header        ------------------------------ */
+.logo {
+    max-width: 200px;
+    float: left;
+}
+
+.active {
+    background-color: #fca23a !important;
+    color: #def1ff !important;
+}
+
+.nav-link {
+    background-color: #000517;
+    color: #def1ff !important;
+    font-size: 14pt;
+}
+
+.nav-link:visited {
+    color: #def1ff;
+}
+
+.nav-link:hover {
+    color: #fca23a !important;
+}
+
+.nav-link:active {
+    background-color: #fca23a;
+    color: #def1ff;
+}
+
+.dropdown-menu {
+    text-decoration: none;
+    background-color: #000517;
+    color: #def1ff;
+    font-size: 14pt;
+}
+
+.dropdown-item {
+    text-decoration: none;
+    color: #def1ff;
+    font-size: 14pt;
+}
+
+.dropdown-item:visited {
+    text-decoration: none;
+    color: #def1ff;
+}
+
+.dropdown-item:hover {
+    text-decoration: none;
+    background-color: #000517 !important;
+    color: #fca23a;
+}
+
+.dropdown-item:active {
+    text-decoration: none;
+    background-color: #000517;
+    color: #def1ff;
+}
+
+.navbar-toggler {
+    color: #def1ff !important;
+}
+
+/* ------------------------------ Frase         ------------------------------ */
+.frase {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.convite {
+    text-align: center;
+    color: #fca23a;
+}
+
+.fale_conosco {
+    background-color: #def1ff;
+    color: #000517;
+    font-size: 18pt;
+    border: 10px;
+}
+
+.fale_conosco:hover {
+    color: #fca23a;
+}
+
+/* ------------------------------ Introducao    ------------------------------ */
+
+.introducao {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.subtitulo {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-size: 18pt;
+}
+
+.subtitulo2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 18pt;
+}
+
+.produtos {
+    background-color: #def1ff;
+    color: #000517;
+    font-size: 12pt;
+    border: 0;
+    float: right;
+}
+
+.produtos:hover {
+    color: #fca23a;
+}
+
+.mais {
+    background-color: #def1ff;
+    color: #000517;
+    font-size: 12pt;
+    border: 0;
+    float: right;
+}
+
+.mais:hover {
+    color: #fca23a;
+}
+
+.subtitulo_beneficios {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-size: 18pt;
+    text-align: center;
+}
+
+.beneficios {
+    list-style: none;
+    text-align: center;
+}
+
+.lista {
+    padding-bottom: 12px;
+}
+
+/* ------------------------------ Selos         ------------------------------ */
+.selos {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.titulo {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.tipos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.minititulo {
+    text-align: center;
+}
+
+.selos p {
+    text-align: center;
+}
+
+.tipos {
+    max-width: 100px;
+}
+
+.todos {
+    background-color: #def1ff;
+    color: #000517;
+    font-size: 12pt;
+    padding-top: 1cm;
+    border: 0;
+}
+
+.todos:hover {
+    color: #fca23a;
+}
+
+/* ------------------------------ Parcerias     ------------------------------ */
+
+.parcerias {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sites {
+    background-color: #def1ff;
+    color: #000517;
+    font-size: 12pt;
+    border: 0;
+    float: right;
+}
+
+.sites:hover {
+    color: #fca23a;
+}
+
+.cadastro
+{
+    background-color: #def1ff;
+    color: #000517;
+    font-size: 14pt;
+    border: 0;
+}
+
+.cadastro:hover {
+    color: #fca23a;
+}
+
+/* ------------------------------ Redes Sociais ------------------------------ */
+.redes_sociais {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.logo_footer {
+    max-width: 150px;
+}
+
+.img_social {
+    float: right;
+    max-width: 50px;
+    padding-right: 20px;
+}
+
+/* ------------------------------ Footer        ------------------------------ */
+
+.footer {
+    background-color: #000517;
+    color: #def1ff;
+}
+
+.footer p {
+    text-align: center;
+    padding: 10px;
+}
+
+/* ------------------------------ Media Queries ------------------------------ */
+@media screen and (max-width: 767px) {
+    .subtitulo_beneficios {
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .beneficios {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .menu_area {
+        border-right: 50px;
+    }
+}

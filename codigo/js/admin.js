@@ -1,10 +1,10 @@
 import { 
   getDatabase, 
   getSessionAccount, 
-  setDatabase, 
+  setDatabase,
   logout, 
   alert 
-} from "./utils.js";
+} from "./modulos/utils.js";
 
 window.onload = () => {
   const user = getSessionAccount();
