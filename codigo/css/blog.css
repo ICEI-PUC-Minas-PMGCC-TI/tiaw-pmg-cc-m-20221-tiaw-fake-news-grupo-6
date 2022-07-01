@@ -86,46 +86,17 @@ header {
     color: #def1ff !important;
 }
 
-/* ------------------------------ Parcerias     ------------------------------ */
+/* ------------------------------ Blog     ------------------------------ */
 
 .titulo {
+    padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
     color:#fca23a;
 }
 
-.parcerias {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.parcerias img {
-    width: 100%;
-    padding: 30px;
-}
-
-.sites {
-    background-color: #def1ff;
-    color: #000517;
-    font-size: 12pt;
-    border: 0;
-    float: right;
-}
-
-.sites:hover {
-    color: #fca23a;
-}
-
-.cadastro
-{
-    background-color: #def1ff;
-    color: #000517;
-    font-size: 14pt;
-    border: 0;
-}
-
-.cadastro:hover {
-    color: #fca23a;
+.blog p {
+    text-align: justify;
 }
 
 /* ------------------------------ Redes Sociais ------------------------------ */

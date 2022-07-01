@@ -11,8 +11,6 @@ body p {
 header {
     background-color: #000517;
     color: #def1ff;
-    padding: 20px;
-    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -34,7 +32,6 @@ header {
 }
 
 .nav-link {
-    background-color: #000517;
     color: #def1ff !important;
     font-size: 14pt;
 }
