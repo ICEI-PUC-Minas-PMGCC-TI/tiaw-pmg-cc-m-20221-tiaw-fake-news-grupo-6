@@ -1,0 +1,62 @@
+/* ------------------------------ Header        ------------------------------ */
+.logo {
+    max-width: 200px;
+    float: left;
+}
+
+.active {
+    background-color: #fca23a !important;
+    color: #def1ff !important;
+}
+
+.nav-link {
+    color: #def1ff !important;
+    font-size: 14pt;
+}
+
+.nav-link:visited {
+    color: #def1ff;
+}
+
+.nav-link:hover {
+    color: #fca23a !important;
+}
+
+.nav-link:active {
+    background-color: #fca23a;
+    color: #def1ff;
+}
+
+.dropdown-menu {
+    text-decoration: none;
+    background-color: #000517;
+    color: #def1ff;
+    font-size: 14pt;
+}
+
+.dropdown-item {
+    text-decoration: none;
+    color: #def1ff;
+    font-size: 14pt;
+}
+
+.dropdown-item:visited {
+    text-decoration: none;
+    color: #def1ff;
+}
+
+.dropdown-item:hover {
+    text-decoration: none;
+    background-color: #000517 !important;
+    color: #fca23a;
+}
+
+.dropdown-item:active {
+    text-decoration: none;
+    background-color: #000517;
+    color: #def1ff;
+}
+
+.navbar-toggler {
+    color: #def1ff !important;
+}

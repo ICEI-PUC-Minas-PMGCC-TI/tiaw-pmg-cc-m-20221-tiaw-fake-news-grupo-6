@@ -5,55 +5,57 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Confia!</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/blog.css">
+	<title>Blog - Confia!</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/blog.css">
+  <!--JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-	<header class="container header">
-		<div class="row menu">
-			<div class="col-10 menu_area">
-				<nav class="navbar navbar-expand-md navbar-light">
-					<a class="link-imagem" href="index.html"><img src="imagens/logo.png" class="logo"></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav ml-auto py-4 py-md-0">
-							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
-							</li>
-							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-								<a class="nav-link" href="#">Blog</a>
-							</li>
-							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-								<a class="nav-link" href="contato.html">Contato</a>
-							</li>
-							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-								<a class="nav-link" href="produtos.html">Pacotes</a>
-							</li>
-							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-								<a class="nav-link" href="#">Login</a>
-							</li>
-							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-									aria-expanded="false">Sobre</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Equipe</a>
-									<a class="dropdown-item" href="sites_parceiros.html">Sites parceiros</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div>
-		</div>
-		</div>
-	</header>
+  <!--Navbar-->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img src="imagens/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato/index.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produtos.html">Pacotes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sobre
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Equipe</a></li>
+                <li><a class="dropdown-item" href="sites_parceiros.html">Sites parceiros</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 	<main class="container">
 		<section class="row blog">
@@ -85,13 +87,13 @@
 			</div>
 		</section>
 
-		<div class="col-12 col-sm-12 col-md-12 col-lg-12 line"></div>
+		<div class="container-fluid line"></div>
 
 		<section class="row redes_sociais">
-			<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+			<div class="col-6">
 				<img src="imagens/logodark.png" class="logo_footer">
 			</div>
-			<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+			<div class="col-6">
 				<a href="#"><img src="imagens/facebook.png" class="img_social"></a>
 				<a href="#"><img src="imagens/instagram.png" class="img_social"></a>
 				<a href="#"><img src="imagens/twitter.png" class="img_social"></a>

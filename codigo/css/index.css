@@ -8,11 +8,6 @@ body p {
     font-size: 14pt;
 }
 
-header {
-    background-color: #000517;
-    color: #def1ff;
-    text-align: center;
-}
 
 .line {
     display: inline-block;
@@ -251,18 +246,6 @@ header {
     float: right;
     max-width: 50px;
     padding-right: 20px;
-}
-
-/* ------------------------------ Footer        ------------------------------ */
-
-.footer {
-    background-color: #000517;
-    color: #def1ff;
-}
-
-.footer p {
-    text-align: center;
-    padding: 10px;
 }
 
 /* ------------------------------ Media Queries ------------------------------ */
